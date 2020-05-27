@@ -14,7 +14,7 @@ $json = file_get_contents($url, false, $context);
 $releases = json_decode($json, true);
 //$version = $releases['0']['name'];
 //$version = preg_replace('/[^0-9.]/', '', $version);
-$version = '2.7.2';
+$version = '2.7.3';
 
 $link = 'https://modx.s3.amazonaws.com/releases/'.$version.'/modx-'.$version.'-pl.zip';
 $setupLocation = 'setup/index.php';
